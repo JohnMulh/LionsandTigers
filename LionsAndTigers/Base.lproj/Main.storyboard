@@ -16,15 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7A-K7-OrE">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06G-Cl-UVJ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vLF-GV-FOx"/>
                                     <barButtonItem title="Next" id="NuQ-lk-hCo">
                                         <connections>
                                             <action selector="nextBarButtonItem:" destination="BYZ-38-t0r" id="urY-g6-013"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vLF-GV-FOx"/>
                                 </items>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="633" width="375" height="44"/>
@@ -57,30 +63,24 @@
                                     <rect key="frame" x="16" y="581" width="331" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7A-K7-OrE">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="o7A-K7-OrE"/>
                                 <exclude reference="06G-Cl-UVJ"/>
                                 <exclude reference="Btj-th-LKi"/>
                                 <exclude reference="GVd-EY-QlA"/>
                                 <exclude reference="Lc4-6v-v8E"/>
-                                <exclude reference="o7A-K7-OrE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
+                                <include reference="o7A-K7-OrE"/>
                                 <include reference="06G-Cl-UVJ"/>
                                 <include reference="Btj-th-LKi"/>
                                 <include reference="GVd-EY-QlA"/>
                                 <include reference="Lc4-6v-v8E"/>
-                                <include reference="o7A-K7-OrE"/>
                             </mask>
                         </variation>
                     </view>
